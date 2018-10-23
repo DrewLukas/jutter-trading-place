@@ -1,0 +1,309 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/***************************************
+* Basic layout styles          *
+****************************************/
+
+body {
+	/*background: rgba(255,254,242,1.00);*/
+	background: #FFF;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ================ Code for Grid to behave properly =============== */
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row:after { clear: both; }
+
+.row-full-width {padding: 0;}
+.row-color { background-color: #000; opacity: 1;  padding: 45px 0px 20px 0px; margin-bottom: 30px;}
+.container {overflow: hidden;}
+.col { width: 100%; padding: 0 25px;}
+.col-full-width {padding: 0;}
+.image-small {width:80%; height: auto; margin: 0 auto;}
+.row-usp .col-lg-one-fourth {width: 50%; float: left; text-align: center;}
+.margin-bottom-extra {margin-bottom: 30px;}
+
+[class*="col_"] { width: 100%; padding: 0 25px;}
+
+
+
+/* ================= Basic style images ================ */
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: block;
+	padding-bottom: 30px;
+}
+
+.img-box img {padding-bottom: 30px;}
+
+/* =============== Style line divider ================ */
+
+hr {
+	color: #555555;
+	border: none;
+	border-top: 1px solid #555555;
+	width: 85%;
+	height: 1px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+/*--------------------------------------
+  Fonts lay out          
+---------------------------------------*/
+
+body {
+	font: 100%/1.6 'Muli', 'Open Sans', serif;
+	line-height: 1.0;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	letter-spacing: 0.1em;
+	word-spacing: 0em;
+	color: #242424;
+	max-width: 100%;
+	height: 100%;
+}
+
+.letter-spacing-small {letter-spacing: -0.03em;}
+.text-small {font-size: 91%;}
+.text-x-small {font-size: 85%;}
+.margin-bottom-zero {margin-bottom: 0;}
+.italic {font-style: italic;}
+.normal {font-weight: 400;}
+.semi-bold {font-weight: 600;}
+.bold {font-weight: 700;}
+
+p 	{padding-bottom: 30px; line-height: 1.5em;}
+	
+a {text-decoration: none; font-weight: 400; font-size: 100%;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.07;
+	font-weight: 400;
+	letter-spacing: 0.07em;
+}
+
+h1 {font-size: 3.125em;}
+h2 {font-size: 2.618em;}
+h3 {font-size: 1.931em;}
+h4 {font-size: 1.618em;}
+h5 {font-size: 1.194em;}
+h6 {font-size: 1em;}
+
+h1, h2, h3, h4, h5, h6 {padding-bottom: 20px;}
+
+/* Colors H1 - H6 */
+
+h2, h3, h4, h5, h6 {color: #242424;}
+
+/* ================ Style Buttons ===================== */
+
+.button {
+	padding: 10px 15px 12px 15px;
+	margin-bottom: 30px;
+	font-size: 80%;
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .07em;
+	display: inline-block;
+	cursor: pointer;
+	transition-duration: .3s;
+	-webkit-transition-duration: .3s;
+}
+
+.button-general {
+	background-color: rgba(0,0,0,1);
+	color: #FFF;
+}
+
+.button-general:hover {
+	color: rgba(255,255,255,0.85);
+}
+
+.button-light {
+	border: 2px solid #FFF;
+	color: #FFF;
+}
+
+/* ================ Style Icons ===================== */
+
+.usp {text-align: center; margin-bottom: 30px;}
+.row-usp {margin: 20px 0 0px 0;}
+.row-color-usp {padding: 60px 0px 10px 0px; margin-bottom: 50px; border-top: 2px dashed #000; border-bottom: 2px dashed #000;}
+.usp-last {margin-bottom: 0;}
+
+.usp-big i {font-size: 300%; padding-bottom: 20px; color: rgba(0,0,0,0.9);}
+.usp-big p {text-transform: uppercase; font-size: 105%; color: rgba(0,0,0,1); font-weight: 300; padding-bottom: 0px;}
+.usp-big .icon-text-holder p:nth-child(2) {text-transform: lowercase; font-size: 100%;}
+
+.usp-medium i {font-size: 250%; padding-bottom: 15px; color: rgba(0,0,0,0.9);}
+.usp-medium p {text-transform: none; font-size: 105%; color: rgba(0,0,0,1); font-weight: 400; padding-bottom: 0;}
+.usp-medium .icon-text-holder p:nth-child(2) {text-transform: lowercase; font-size: 90%;}
+
+.usp-small i {font-size: 200%; padding-bottom: 15px; color: rgba(0,0,0,0.9);}
+.usp-small p {text-transform: uppercase; font-size: 75%; color: rgba(0,0,0,1); font-weight: 400; padding-bottom: 0;}
+.usp-small .icon-text-holder p:nth-child(2) {text-transform: lowercase; font-size: 85%;}
+
+
+/* ==================== Tablet View ===================== */
+
+@media (min-width: 768px) {
+
+	/* Basic Layout Style Tablet */
+	
+	.col-md-one-half {width: 50%; float: left; text-align: left;}
+	.col-md-one-thirth {width: 33.33%; float: left; text-align: left;}
+	.col-lg-one-fourth, .row-usp .col-lg-one-fourth {width: 25%; float: left; text-align: center;}
+	.col-lg-one-fifth {width: 20%; float: left; text-align: center;}
+	.container-contact .info-box { text-align: center; }
+	.row {padding-left: 30px; padding-right: 30px;}
+	.last-row {margin-bottom: 0;}
+	.col {padding: 0 15px;}
+	.col-max-width {width: 75%; margin: 0 auto; height: auto;}
+	.col-full-width {padding: 0;}
+	.col-md-one-half .img-box img {padding-top: 0;}
+	.img-medium-size {width: 85%; margin: 0 auto; height: auto;}
+	.margin-bottom-extra-tablet {margin-bottom: 30px;}
+	.image-small-left {max-width: 80%; margin-left: 10%;}
+	.image-small-right {max-width: 80%; margin-right: 10%;}
+	
+	[class*="col_"] {
+    float: left;
+	text-align: left;
+}
+	
+	.col_1 {width: 8.33%;}
+	.col_2 {width: 16.66%;}
+	.col_3 {width: 25%;}
+	.col_4 {width: 33.33%;}
+	.col_5 {width: 41.66%;}
+	.col_6 {width: 50%;}
+	.col_7 {width: 58.33%;}
+	.col_8 {width: 66.66%;}
+	.col_9 {width: 75%;}
+	.col_10 {width: 83.33%;}
+	.col_11 {width: 91.66%;}
+	.col_12 {width: 100%;}
+	
+	/* Style Buttons */
+
+	a.button-hero {font-size: 115%; padding: 8px 30px 8px 30px; margin-top: 35px;}
+
+	/* Modal Content General*/
+	.modal-general .wrapper-modal {padding: 25px 50px 50px;}
+	.modal-general .close {position: absolute; top: 30px; right: 50px;}
+	
+	
+	/* Navigation Tablet */
+	
+	/* Basic Layout Navigation Tablet */
+	header .row, footer .row {padding: 0;}
+	
+	/* Layout Header Navigation */
+	nav.style-nav {display: block;}
+	.style-nav ul li {display: inline-block;}
+	.style-nav ul li a{font-size: 90%;}
+	.menu-trigger {display: none;}
+	
+	/* Sink effect navigation */
+	.hvr-sink {
+  		display: inline-block;
+  		vertical-align: middle;
+  		-webkit-transform: perspective(1px) translateZ(0);
+  		transform: perspective(1px) translateZ(0);
+  		box-shadow: 0 0 1px transparent;
+  		-webkit-transition-duration: 0.3s;
+  		transition-duration: 0.3s;
+  		-webkit-transition-property: transform;
+  		transition-property: transform;
+  		-webkit-transition-timing-function: ease-out;
+  		transition-timing-function: ease-out;
+	}
+	.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  		-webkit-transform: translateY(5px);
+  		transform: translateY(5px);
+	}
+
+}
+
+/* ==================== Desktop View ===================== */
+
+@media (min-width: 1024px) {
+	
+	body {
+		max-width: 100%;
+	}
+	
+	h1 {font-size: 6.2em;}
+	h2 {font-size: 4em;}
+	h3 {font-size: 3.125em;}
+	h4 {font-size: 2em;}
+	h5 {font-size: 1.563em;}
+	h6 {font-size: 1em;}
+
+	/*.col-md-one-half {
+		width: 55%;
+		margin: 0 auto;
+	}*/
+	
+	.col-img {
+		width: 65%;
+		margin: 0 auto;
+		height: auto;
+	}
+	
+	/* Basic Layout Style Desktop */
+	
+	
+	.row {padding-left: 50px; padding-right: 50px;}
+	.row-color {margin-top: 10px; margin-bottom: 40px;}
+	.last-row {margin-bottom: 0;}
+	.container {max-width: 1200px; margin: 0 auto;}
+	.container-contact { max-width: 875px; }
+	.container-contact .info-box { padding: 10px 40px 15px 40px; }
+	.img-medium-size {width: 58%; margin: 0 auto; height: auto;}
+	.col-max-width {width: 75%; margin: 0 auto; height: auto;}
+	.margin-bottom-extra-desktop {margin-bottom: 50px;}
+	
+}
+
+/* ==================== Big Desktop View ===================== */
+
+
+@media (min-width: 1325px) {
+	
+	h1 {font-size: 6.2em;}
+	h2 {font-size: 4em;}
+	h3 {font-size: 3.125em;}
+	h4 {font-size: 2em;}
+	h5 {font-size: 1.563em;}
+	h6 {font-size: 1em;}
+	
+	h1, h2, h3, h4, h6 {padding-bottom: 20px;}
+	
+	.row-color {margin-top: 30px; margin-bottom: 50px; padding-top: 40px; padding-bottom: 30px;}
+	.last-row {margin-bottom: 0;}
+	.col {padding: 0 25px;}
+	
+}

@@ -1,0 +1,18 @@
+Cheatsheet Personal Marktplaats:
+
+(Scrum) Doing
+
+Als gebruiker wil ik een gebruikersaccount kunnen aanmaken zodat ik alle functies kan gebruiken op de website.
+
+Als gebruiker wil ik een pagina waarop ik kan inloggen.
+
+
+Wat heb ik gedaan?
+Ik heb een voorbeeld gezocht voor het maken van een registratie en login systeem. Dit voorbeeld heb ik doorlopen en de afhankelijkheden tussen de verschillende php bestanden doorgrond.
+
+Mijn vervolg stap is om een de php bestanden voor het inlogsysteem vanaf begin af zelf te coderen. 
+
+
+Create a simple registration and login system using PHP/MySQL
+
+Building the Registration System 

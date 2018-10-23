@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ================= Header Mobile First ==================== */
+
+header {
+	padding: 10px 10px 15px;
+	background-color: /*#EAEAEA*/ #FFF;
+	color: #242424;
+	border-bottom: 10px solid black;
+}
+
+header .col {
+	position: relative;
+}
+
+/* Header - Logo */
+
+div.wrapper-logo img {
+	width: 230px;
+	height: auto;
+	padding: 0;
+}
+
+
+/* ================= Navigation Mobile First ==================== */
+
+/* Header Navigation */
+
+nav.style-nav {
+	display: none;
+}
+nav.nav-expanded {
+	display: block;
+}
+.menu-trigger {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	font-size: 140%;
+	color: #242424;
+	cursor: pointer;
+	padding: 0px;
+}
+.style-nav ul, .style-nav-footer ul {
+	list-style-type: none;
+	padding-top: 15px;
+}
+.style-nav-footer ul {
+	padding-bottom: 50px;
+}
+.style-nav ul li a, .style-nav-footer ul li a {
+	text-decoration: none;
+	color: #242424;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 80%;/*transition: all 0.3s linear;*/
+}
+.style-nav ul li a:hover {
+	color: #FFF;
+	background-color: #242424;
+	font-weight: 300;
+}
+/* Footer Navigation */
+
+.style-nav-footer li {
+	margin: 0;
+}
+.style-nav-footer ul li a {
+	text-transform: uppercase;
+	font-size: 100%;
+	color: white;
+	font-weight: 300;
+}
+.style-nav-footer ul li a:hover {
+	opacity: 0.7;
+}
+/* ================= Homepage Mobile First ==================== */
+
+/* ------- Hero and Hero Content Homepage ------- */
+
+.wrapper_hero, .wrapper_hero_content {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	color: rgba(255,255,255,1.00);
+	margin-bottom: 65px;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%); /* not supported in Internet Explorer */
+}
+
+div.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: auto;
+    background-color: rgba(0,0,0,0.55);
+    z-index: 2;
+}
+
+.wrapper_hero {
+	height: 350px;
+	background: url(../images/img_hero_small.jpg) center 80% no-repeat;
+	background-size: cover;
+}
+
+.wrapper_hero_content {
+	height: 250px;
+	background: url(../images/img_hero_content_small.jpg) center 80% no-repeat;
+	background-size: cover;
+	margin-top: 30px;
+	padding: 200px 0 150px 0;
+}
+
+img.img-jasper {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	padding: 0;
+	margin: 0 0 20px 0;
+	display: inline-block;
+}
+
+.wrapper_hero div.hero_text, .wrapper_hero_content div.hero_text {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%, -45%);
+	display: block;
+	padding: 0px 50px;
+	width: 100%;
+}
+div.hero_text h1 {
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1.3em;
+	padding-bottom: 30px;
+	letter-spacing: 0.05em;
+}
+
+.wrapper_hero_content .hero-content-p {
+	letter-spacing: .3em;
+}
+
+/* ================= Footer Mobile First ==================== */
+
+footer {
+	padding: 50px 10px 35px 10px;
+	background-color: #000000;
+	text-align: center;
+}
+footer div.wrapper-logo {
+	padding-bottom: 10px;
+}
+
+footer div.wrapper-logo img {
+	float: none;
+	margin: 0 auto;
+}
+
+div.logo-text h6 {
+	text-align: left;
+}
+footer a {
+	color: #FFFFFF;
+}
+footer ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 30px 0 20px 0;
+}
+footer ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+footer .fab {
+	padding: 0;
+	font-size: 200%;
+	width: auto;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background: none;
+}
+footer .fab:hover {
+	opacity: 0.7;
+}
+/* Colors H1 - H6 */
+
+footer h2, footer h3, footer h4, footer h5, footer h6 {
+	color: white;
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	letter-spacing: 0.2em;
+	line-height: 1.4em;
+}
+footer p {
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	font-size: 90%;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+/* ================= Tablet View ==================== */
+
+
+@media (min-width: 768px) {
+
+
+/* ----------------- Header Tablet --------------- */
+	
+	/* Header Logo */
+	
+	header {padding: 10px 10px 15px;}
+	header.wrapper-logo {
+		float: left;
+	}
+	
+/* ----------------- Navigation Tablet --------------- */
+	
+	/* Basic Layout Navigation Tablet */
+	header .row, footer .row {padding: 0;}
+	
+	/* Layout Header Navigation Tablet */
+	
+	header .wrapper-logo {
+		float: left;
+		padding: 5px 0px 0px 10px;
+	}
+
+	
+	.style-nav ul {
+		padding-top: 0;
+	}
+	
+	nav.style-nav {
+		float: right;
+		display: block;
+		padding: 10px 30px 10px 0px;
+		
+	}
+	.style-nav ul li {display: inline-block;}
+	.style-nav ul li a{font-size: 90%;}
+	.menu-trigger {display: none;}
+	
+	/* Sink effect navigation */
+	.hvr-sink {
+  		display: inline-block;
+  		vertical-align: middle;
+  		-webkit-transform: perspective(1px) translateZ(0);
+  		transform: perspective(1px) translateZ(0);
+  		box-shadow: 0 0 1px transparent;
+  		-webkit-transition-duration: 0.3s;
+  		transition-duration: 0.3s;
+  		-webkit-transition-property: transform;
+  		transition-property: transform;
+  		-webkit-transition-timing-function: ease-out;
+  		transition-timing-function: ease-out;
+	}
+	.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  		-webkit-transform: translateY(5px);
+  		transform: translateY(5px);
+	}
+	
+	/* ================= Homepage Tablet ==================== */
+
+	/* ------- Hero and Hero Content Homepage Tablet ------- */
+	
+	.wrapper_hero div.hero_text {
+		width: 80%;
+	}
+	
+	.wrapper_hero div.hero_text h1 {
+		padding-bottom: 40px;
+	}
+	
+	.wrapper_hero_content .hero-content-p {
+	font-size: 120%;
+	}
+	
+}
+
+@media (min-width: 1024px) {
+
+	/* ================= Homepage Desktop ==================== */
+
+	/* ------- Hero and Hero Content Homepage Desktop ------- */
+	
+	
+	#homepage .wrapper_hero {
+		height: 500px;
+	}
+	
+	#homepage .wrapper_hero_content {
+		height: 350px;
+	}
+	
+	.wrapper_hero div.hero_text {
+		width: 50%;
+	}
+	
+	.wrapper_hero div.hero_text h1 {
+		padding-bottom: 60px;
+	}
+	
+
+}
+
+
