@@ -8,7 +8,7 @@
 
 body {
 	/*background: rgba(255,254,242,1.00);*/
-	background: #FFF;
+	background: #f8f9f9;
 	margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@ body {
 	line-height: 1.0;
 	font-weight: 400;
 	font-style: normal;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 0.1em;
 	word-spacing: 0em;
 	color: #242424;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {padding-bottom: 20px;}
 
 /* Colors H1 - H6 */
 
-h2, h3, h4, h5, h6 {color: #242424;}
+h2, h3, h4, h5, h6 {color: /*#242424*/ #0071BC;}
 
 /* ================ Style Buttons ===================== */
 
@@ -164,6 +164,102 @@ h2, h3, h4, h5, h6 {color: #242424;}
 .usp-small i {font-size: 200%; padding-bottom: 15px; color: rgba(0,0,0,0.9);}
 .usp-small p {text-transform: uppercase; font-size: 75%; color: rgba(0,0,0,1); font-weight: 400; padding-bottom: 0;}
 .usp-small .icon-text-holder p:nth-child(2) {text-transform: lowercase; font-size: 85%;}
+
+
+/* ================ Style Forms ===================== */
+.wrapper-login{
+	width: 400px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+input[type=text], input[type=password], select {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-size: 110%;
+	text-align: left;
+	text-transform: none;
+	color: #66757F;
+	font-weight: 200;
+	background-color: #FFF;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1; /* Firefox */
+	font-size: 80%;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-size: 80%;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 80%;
+}
+
+input[type=submit] {
+    background-color: /*#F7931E*/ /*#8CC63F*/ rgba(0,113,188,1.00);
+    color: #FFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin: 20px 0;
+	display: block;
+	letter-spacing: .1em;
+	text-transform: none;
+	font-size: 110%;
+}
+
+input[type=submit]:hover {
+	background-color: rgba(0,113,188,.9);
+
+}
+
+/* Required fields in forms - error-handling  */
+
+.has-error .form-control {
+	border-color: /*#a94442*/ #F7931E;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.form-control:focus {
+	outline: 0;
+}
+
+.has-error .form-control:focus {
+	border-color: /*#843534*/ #F7931E;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    color: #737373;
+}
+
+.has-error .help-block {
+	color: /*#a94442*/ #F7931E;
+}
+
+/*input[type=text]:focus {
+    background-color: lightblue;
+	border: 2px solid #FFF;
+	color: #3F494F;
+}*/
 
 
 /* ==================== Tablet View ===================== */

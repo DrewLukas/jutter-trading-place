@@ -8,7 +8,7 @@ header {
 	padding: 10px 10px 15px;
 	background-color: /*#EAEAEA*/ #FFF;
 	color: #242424;
-	border-bottom: 10px solid black;
+	border-bottom: 10px solid #0071BC;
 }
 
 header .col {
@@ -18,7 +18,7 @@ header .col {
 /* Header - Logo */
 
 div.wrapper-logo img {
-	width: 230px;
+	width: 160px;
 	height: auto;
 	padding: 0;
 }
